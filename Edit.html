@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>RMI Backend</title>
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	
+	<header>
+		
+	</header>
+	
+	<body background="background.png">
+		<ul id="nav">
+			<li><a href="Create.html">Create New Job</a></li>
+			<li><a href="Edit.html">Edit Job</a></li>
+			<li><a href="Search.html">Search For Job</a></li>
+			<li><a href="index.html">Logout</a></li>
+		</ul>
+		<div id="textforform">
+			<h5>Input the Job Information and hit Save Changes to save the job.</h5>
+		</div>
+		<div>
+			<form id="jobform">
+				<div id="row1">
+					<input type="text" id="jobnumber" placeholder="RMI Job Number"><br><br>
+					<input type="text" id="jobname" placeholder="Job Name"><br><br>
+					<input type="text" id="location" placeholder="Location"><br><br>
+					<input type="text" id="address" placeholder="Address"><br><br>
+					<input type="text" id="description" placeholder="Description"><br><br>
+					<input type="text" id="contractdate" placeholder="Contract Date"><br><br>
+					<input type="text" id="biddate" placeholder="Bid Date"><br><br>
+					<input type="text" id="startdate" placeholder="Start Date"><br><br>
+					<input type="text" id="clientjobnumber" placeholder="Client Job Number"><br><br>
+					<input type="text" id="purchaseorder" placeholder="Purchase Order"><br><br>
+					<input type="text" id="pmname" placeholder="PM Name"><br><br>
+					<input type="text" id="pmofficefax" placeholder="PM Office Fax"><br><br>
+					<input type="text" id="pmofficephone" placeholder="PM Office Phone"><br><br>
+					<input type="text" id="pmemail" placeholder="PM Email"><br><br>
+					<input type="text" id="pmmobile" placeholder="PM Mobile #"><br><br>
+					<input type="text" id="srphone" placeholder="Sales Rep Phone"><br><br>
+				</div>
+				<div id="row2">
+					<input type="text" id="siname" placeholder="Superintendent Name"><br><br>
+					<input type="text" id="siemail" placeholder="Superintendent Email"><br><br>
+					<input type="text" id="simobile" placeholder="Superintendent Mobile #"><br><br>
+					<input type="text" id="phases" placeholder="Work Schedule Phases"><br><br>
+					<input type="text" id="highwayairport" placeholder="Highway or Airport"><br><br>
+					<input type="text" id="mobrt" placeholder="Mob RT"><br><br>
+					<input type="text" id="contractamount" placeholder="Contract Amount"><br><br>
+					<input type="text" id="squareprice" placeholder="Square Price"><br><br>
+					<input type="text" id="squareyards" placeholder="Square Yards"><br><br>
+					<input type="text" id="rubblizing" placeholder="Rubblizing"><br><br>
+					<input type="text" id="breaking" placeholder="Breaking"><br><br>
+					<input type="text" id="thickness" placeholder="Thickness"><br><br>
+					<input type="text" id="basethickness" placeholder="Base Thickness"><br><br>
+					<input type="text" id="reinforcetype" placeholder="Reinforcement Type"><br><br>
+					<input type="text" id="basetype" placeholder="Base Type"><br><br>
+					<input type="text" id="jobfinished" placeholder="Job Finished"><br><br>
+				</div>
+				<div id="row3">
+					<input type="text" id="edgedrain" placeholder="Edge Drain"><br><br>
+					<input type="text" id="providefuel" placeholder="Provide Fuel"><br><br>
+					<input type="text" id="union" placeholder="Union"><br><br>
+					<input type="text" id="taxexempt" placeholder="Tax Exempt"><br><br>
+					<input type="text" id="taxexemptcert" placeholder="Tax Exempt Cert on File"><br><br>
+					<input type="text" id="dlrreq" placeholder="DLRs Required"><br><br>
+					<input type="text" id="certpayroll" placeholder="Certified Payrolls"><br><br>
+					<input type="text" id="prevwage" placeholder="Prevailing Wage"><br><br>
+					<input type="text" id="payrollname" placeholder="Certified Payroll Name"><br><br>
+					<input type="text" id="payrolladdress" placeholder="Certified Payroll Address"><br><br>
+					<input type="text" id="payrollcity" placeholder="Certified Payroll City"><br><br>
+					<input type="text" id="payrollstate" placeholder="Certified Payroll State"><br><br>
+					<input type="text" id="payrollzip" placeholder="Certified Payroll Zip"><br><br>
+					<input type="text" id="contractorname" placeholder="Contractor Name"><br><br>
+					<input type="text" id="salesrepname" placeholder="Sales Rep Name"><br><br>
+				</div>
+			</form><br>
+			
+			<div id="buttons">
+				<button type="button" class="create-btns">Save Changes</button><br><br>
+				<button type="button" onclick="clearForm()" class="create-btns">Cancel</button>
+				
+				<script>
+					function clearForm() {
+						document.getElementById("jobform").reset();
+					}
+				</script>
+			</div>
+			<div id="reportButtons">
+				<button type="button" onclick="goBack()" class="reportBtns">Go Back</button>
+				
+				<script>
+					function goBack() {
+						window.history.back();
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+		
+</html>

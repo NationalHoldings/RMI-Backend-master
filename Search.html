@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>RMI Backend</title>
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	
+	<header>
+		
+	</header>
+	
+	<body background="background.png">
+		<ul id="nav">
+			<li><a href="Create.html">Create New Job</a></li>
+			<li><a href="Edit.html">Edit Job</a></li>
+			<li><a href="Search.html">Search For Job</a></li>
+			<li><a href="index.html">Logout</a></li>
+		</ul>
+		<div>
+			<h3 id="searchhead">Search by Job #</h3>
+		</div>
+		<div>
+			<form id="searchbar">
+				<input id="thebar" type="text" placeholder="Search Here">
+			</form>
+		</div>
+		<div>
+			<h4 id="results">Search Results:</h4>
+		</div>
+		<div>
+			<h2>Results will go here</h2>
+		</div>
+		<div id="reportButtons">
+			<button type="button" onclick="goBack()" class="reportBtns">Go Back</button>
+				
+			<script>
+				function goBack() {
+					window.history.back();
+				}
+			</script>
+		</div>
+	</body>
+		
+</html>
